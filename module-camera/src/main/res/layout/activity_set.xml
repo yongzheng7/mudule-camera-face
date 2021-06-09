@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/settings_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/settings_keep_settings_visible_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_keep_settings_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/keep_settings_visible"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_focus_before_capture_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_focus_before_capture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/focus_before_capture"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shutter_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/shutter"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/settings_sound_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/shutter_sound"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_volume_buttons_as_shutter_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_volume_buttons_as_shutter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/volume_buttons_as_shutter"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/startup_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/startup"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/settings_turn_flash_off_at_startup_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_turn_flash_off_at_startup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/turn_flash_off_at_startup"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_always_open_back_camera_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_always_open_back_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/always_open_back_camera"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/saving_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/saving_label"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/settings_flip_photos_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/settings_flip_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingStart="8dp"
+                android:text="@string/flip_front_camera_photos_horizontally"
+                app:switchPadding="8dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_save_photos_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="20dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settings_save_photos_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/save_photos" />
+
+            <TextView
+                android:id="@+id/settings_save_photos"
+                android:maxLines="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="@null"
+                android:clickable="false" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/settings_photo_quality_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="12dp"
+            android:paddingTop="20dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/settings_photo_quality_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/settings_photo_quality"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/photo_compression_quality" />
+
+            <TextView
+                android:id="@+id/settings_photo_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:background="@null"
+                android:clickable="false" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
